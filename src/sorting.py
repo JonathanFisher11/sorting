@@ -388,7 +388,7 @@ def quick_sort(xs, cmp=cmp_standard, reverse=False):
             if cmp(xs[j], pivot) < 0:
                 xs[i], xs[j] = xs[j], xs[i]
                 i += 1
-        xs[1], xs[hi] = xs[hi], xs[i]
+        xs[i], xs[hi] = xs[hi], xs[i]
         go(lo, i - 1)
         go(i + 1, hi)
 
