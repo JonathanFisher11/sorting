@@ -51,6 +51,7 @@ def merge_intervals(intervals):
             merged.append([start, end])
     return merged
 
+
 def rank_teams(votes):
     '''
     LeetCode 1366 -- Rank Teams by Votes
